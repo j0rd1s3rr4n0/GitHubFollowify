@@ -1,10 +1,10 @@
-# GitHubFollowGenius
+# GitHubFollowify
 
 ![Extension Icon](icon.png)
 
 ## Description
 
-GitHubFollowGenius is a browser extension that simplifies the process of automatically following users on GitHub.
+GitHubFollowify is a browser extension that simplifies the process of automatically following users on GitHub.
 
 ## Features
 
