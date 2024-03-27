@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "Github AutoFollow",
+    "description": "Nom de l'extension"
+  },
+  "description": {
+    "message": "AutoFollow Extension est un outil qui automatise le processus de suivi des comptes sur GitHub. Cliquez simplement sur l'icône de l'extension et elle suivra progressivement tous les comptes de la page actuelle qui ont le bouton 'Follow'. Une fois terminé, vous recevrez une notification indiquant que tous les comptes ont été suivis. Gagnez du temps et optimisez votre expérience sur GitHub avec AutoFollow Extension !",
+    "description": "Description de l'extension"
+  }
+}
