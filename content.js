@@ -1,3 +1,27 @@
+
+function loadAllDataHome(){
+    setInterval(()=>{
+        if(document.querySelector("#conduit-feed-frame > form > button")){
+            document.querySelector("#conduit-feed-frame > form > button").click()
+        }
+    },1000);
+
+}
+
+function nextPage(){
+    if(document.querySelector("div.paginate-container > div > a:nth-child(2)")){
+            document.querySelector("div.paginate-container > div > a:nth-child(2)").click()
+        setTimeout(()=>{window.location.reload},500);
+    }
+}
+
+function clickAllStars(){
+    paths = document.querySelectorAll("button > svg.octicon.octicon-star.d-inline-block.mr-2");
+    paths.forEach(path => {
+        path.parentNode.click();
+    });
+}
+
 // Función para hacer clic en los botones "Follow" gradualmente con retraso aleatorio
 function clicGradual(botones, indice) {
     if (indice < botones.length) {
@@ -27,9 +51,20 @@ function clicGradual(botones, indice) {
         }, retraso);
     } else {
         // Cuando finaliza, muestra un mensaje de alerta
-        alert('Followed All Accounts');
+        if(document.querySelector("#user-profile-frame > div > div.paginate-container > div > a:nth-child(2)")){
+            document.querySelector("#user-profile-frame > div > div.paginate-container > div > a:nth-child(2)").click()
+            setTimeout(()=>{window.location.reload();},2000);
+        }
+        // alert('Followed All Accounts');
     }
 }
+
+
+setTimeout(()=>{loadAllDataHome();},1000);
+
+//setTimeout(()=>{clickAllStars();},1000);
+clickAllStars()
+
 
 // Inicia el proceso de clic gradual solo en los botones "Follow" con retraso aleatorio
 var botones = document.querySelectorAll('input.btn.btn-sm');
